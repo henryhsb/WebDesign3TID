@@ -1,0 +1,82 @@
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__marca{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-align: left;
+    margin: 0px 5px 20px 5px;
+}
+.cabecalho__marca__logo{
+    width: 10%;
+    height: auto;
+}
+.cabecalho__marca__nome{
+    width: 95%;
+    font-family: var(--font-primaria);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-terciaria);
+}
+.cabecalho__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--font-secundaria);
+    font-size: 1,5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    padding: 18.5px 10px;
+    border-radius: 8px;
+}
+.cabecalho__menu__link:hover{
+    background-color: var(---hover);
+    color: var(--cor-terciaria);
+    border-color: var(--cor-secundaria);
+    border-radius: 16px;
+}
+@media only screen and (max-width:600px){
+    .cabecalho{
+        padding: 2% 0% 0% 30%;
+    }
+    .cabecalho__marca{
+        flex-direction: column;
+        gap: 0;
+    }
+    .cabecalho__marca__logo{
+        width: 50%;
+    }
+    .cabecalho__marca__nome{
+        padding-top: 10%;
+        margin-left: -20%;
+        text-align: center;
+        font-size: 1.31rem;
+    }
+    .cabecalho__menu{
+        padding: 6%;
+        flex-direction: column;
+        gap: 20px;
+        width: 40%;
+        text-align: center;
+    }
+    .cabecalho__menu__link{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:1024px){ 
+    .cabecalho__marca{
+        gap: 8%;
+    }
+    .cabecalho__marca__logo{
+        width: 15%;
+    }
+    .cabecalho__marca__nome{
+        padding-top: 6%;
+        font-size: 1.59rem;
+    }
+}
